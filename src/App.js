@@ -6,12 +6,11 @@ import Typography from '@material-ui/core/Typography';
 import theme from './theme/MaterialTheme';
 
 const API_URL =
-  process.env.NODE_ENV !== 'development'
+  process.env.NODE_ENV === 'production'
     ? window._env_.REACT_APP_API_URL
     : process.env.REACT_APP_API_URL;
 
 function App() {
-  console.log(process.env)
   return (
     <MuiThemeProvider theme={theme}>
       <AppBar position="static">

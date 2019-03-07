@@ -10,6 +10,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
+                sh 'env.sh'
+                sh 'mv env-config.js public/'
                 sh 'yarn install'
                 sh 'yarn lint'
                 sh 'yarn test'

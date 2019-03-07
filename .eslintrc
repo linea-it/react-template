@@ -19,7 +19,7 @@
     "jest": true
   },
   "rules": {
-    "no-console": 0,
+    "no-console": 2,
     "prettier/prettier": ["error", {"singleQuote": true, "trailingComma": "es5"}],
     "prefer-const": 2
   },
